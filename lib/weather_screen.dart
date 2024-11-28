@@ -33,7 +33,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
   Future<Map<String, dynamic>> getCurrentWeather() async {
     try {
       String cityName = 'London';
-      String apiKey = 'b42e3dcc4fda4ccd124029a59eaf523c';
+      String apiKey = 'b42e3dcc4fda4ccd124029a59eaf523c'; //you should use your own api key here because i'm making this one inactive.
 
       final response = await http.get(Uri.parse(
           'http://api.openweathermap.org/data/2.5/forecast?q=$cityName&APPID=$apiKey'));
